@@ -232,112 +232,7 @@ footer a:hover {
     color: var(--orange-vif);
     transform: translateY(-3px);
 }
-.contact-container {
-    max-width: 1000px;
-    margin: 5rem auto;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-.contact-info h2 {
-    text-align: left;
-}
-.contact-info h2::after {
-    margin: 1.2rem 0;
-}
 
-.contact-info p {
-    color: var(--gris-fonce);
-    margin-bottom: 2rem;
-}
-.info-details {
-    margin-top: 2rem;
-}
-.infos-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 1.2rem;
-    color: var(--violet-fonce);
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-}
-.social-apps {
-    display: flex;
-    gap: 15px;
-}
-.social-apps a {
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: var(--gris-tres-clair);
-    color: var(--gris-tres-fonce);
-    font-size: 0.9rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
-}
-.social-apps a:hover {
-    background-color: var(--violet-doux);
-    color: white;
-}
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-.form-group {
-    margin-bottom: 1.5rem;
-}
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    color: var(--gris-tres-fonce);
-    font-weight: 600;
-}
-.form-group input {
-    width: 100%;
-    padding: 12px 15px;
-    border: 2px solid var(--gris-clair);
-    border-radius: 8px;
-    font-family: inherit;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-.form-group input:focus {
-    outline: none;
-    border-color: var(--violet-doux);
-}
-.btn-submit {
-    background-color: var(--violet-doux);
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.btn-submit:hover {
-    background-color: var(--gris-fonce);
-    transform: translate(-2px);
-}
-@media (max-width: 768px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-        margin: 2rem;
-        gap: 2rem;
-        text-align: left;
-    }
-}
 
 .footer {
     margin: 3rem;
@@ -899,4 +794,154 @@ footer a:hover {
     line-height: 1.6;
     color: #2d3436;
     font-size: 0.95rem;
+}
+
+
+
+
+
+
+
+.contact-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+/* Colonne de gauche : Infos */
+.contact-info {
+    flex: 1;
+    min-width: 320px;
+    background: #2d3436; /* Un gris très foncé élégant */
+    color: white;
+    padding: 45px;
+}
+
+.contact-info h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #00cec9;
+}
+
+.info-details {
+    margin-top: 35px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info-item .icon {
+    font-size: 1.4rem;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+}
+
+/* Couleurs spécifiques réseaux */
+.whatsapp-bg { background-color: #25D366 !important; }
+.telegram-bg { background-color: #0088cc !important; }
+
+.info-item h4 {
+    margin: 0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+.info-item a, .info-item p {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.3s;
+}
+
+.info-item a:hover {
+    color: #00cec9;
+}
+
+/* Colonne de droite : Formulaire */
+.contact-form {
+    flex: 1.5;
+    min-width: 320px;
+    padding: 45px;
+    background: white;
+}
+
+.contact-form h3 {
+    margin-bottom: 25px;
+    color: #2d3436;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #636e72;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #edf2f4;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #00cec9;
+}
+
+.btn-send {
+    background: #00cec9;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-send:hover {
+    background: #00b0ad;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    .contact-info, .contact-form {
+        padding: 30px;
+    }
 }
