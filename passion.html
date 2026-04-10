@@ -9,11 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <header>
         <div>
-            <a href="">Mon portofolio</a>
+            <a href="">Mon portfolio</a>
         </div>
         <nav>
             <ul>
@@ -25,16 +27,45 @@
             </ul>
         </nav>
     </header>
-  <main>
-    <h1>voici mes passions</h1>
-  </main>
+  <main class="passions-container">
+    <header class="passions-header">
+        <h1>Mes Passions</h1>
+        <p>Découvrez ce qui me fait vibrer au quotidien.</p>
+    </header>
+
+    <section class="passions-grid">
+        <article class="passion-card">
+            <div class="icon">🎨</div>
+            <h3>Art & Design</h3>
+            <p>J'adore créer des interfaces intuitives et explorer la psychologie des couleurs pour donner vie à des idées numériques.</p>
+        </article>
+
+        <article class="passion-card">
+            <div class="icon">📷</div>
+            <h3>Photographie</h3>
+            <p>Capturer l'instant présent, surtout lors de mes voyages en pleine nature. J'ai un faible pour la photo de paysage urbain.</p>
+        </article>
+
+        <article class="passion-card">
+            <div class="icon">💻</div>
+            <h3>Développement</h3>
+            <p>Plus qu'un métier, une passion. Résoudre des problèmes complexes avec du code élégant est un vrai défi que j'apprécie.</p>
+        </article>
+
+        <article class="passion-card">
+            <div class="icon">🎸</div>
+            <h3>Musique</h3>
+            <p>Jouer de la guitare me permet de déconnecter et de booster ma créativité après une longue journée de travail.</p>
+        </article>
+    </section>
+</main>
     <footer>
         <div>
             <p>&copy; 2026 Glody. Tous droits réservées.</p>
         </div>
         <div>
-            <img src="Image/Linkedin.png" alt="" width="27">
-            <img src="Image/GitHub.png" alt="" width="27">
-            <img src="Image/X.png" alt="" width="27">
+           <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
         </div>
     </footer>
